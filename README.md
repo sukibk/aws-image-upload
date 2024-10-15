@@ -1,5 +1,7 @@
 # AWS Image Upload Chrome Extension
 
+![alt text](https://github.com/sukibk/aws-image-upload/blob/master/image.jpg?raw=true)
+
 ## Overview
 
 This repository contains a Chrome extension designed for **uploading images resized to a proper width** for **AUVSI's USRD purposes**. Images are converted to **JPG format** and uploaded to our **FTP server**. The extension integrates with AWS services to handle the resizing and storing of the images in **S3 buckets**, while also ensuring **data redundancy** by keeping the images stored on both **FTP servers** and **the cloud**.

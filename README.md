@@ -1,6 +1,7 @@
 # AWS Image Upload Chrome Extension
 
-![alt text](https://github.com/sukibk/aws-image-upload/blob/master/image.jpg?raw=true)
+![Alt text](https://raw.githubusercontent.com/sukibk/aws-image-upload/master/app_ss.png)
+
 
 ## Overview
 

@@ -1,0 +1,151 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center everything vertically */
+    height: 90vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    text-align: center;
+}
+
+.logo-container {
+    display: block;
+    height: 50px;
+    width: 200px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50%;
+    height: auto;
+}
+
+/* Image preview container */
+.image-preview {
+    width: 350px;
+    height: 180px;
+    border: 2px solid lightgrey;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-preview.image-selected {
+    border: none; /* Remove the grey border */
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+#placeholder-text {
+    color: grey;
+}
+
+/* Button styling */
+.styled-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.styled-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Disabled button styling */
+.styled-btn.disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+
+/* Success message styling */
+.success-message {
+    background-color: rgba(47, 189, 47, 0.99); /* Lighter green */
+    color: white;
+    position: absolute;
+    top: 130px;
+    font-weight: 600;
+    font-size: 1.6em; /* Bigger text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%; /* Take up 80% of iframe width */
+    text-align: center;
+}
+
+/* Error message styling */
+.error-message {
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Spinner styling */
+.spinner {
+    position: absolute;
+    top: 180px;
+    width: 80px;
+    height: 80px;
+    border: 3px solid rgba(96, 96, 96, 0.1);
+    border-radius: 50%;
+    border-top-color: #34c8db;
+
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+/* Fade-out effect */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Message container centered */
+#message-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

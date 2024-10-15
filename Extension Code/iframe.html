@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="iframe.css">
+</head>
+<body>
+<div class="container">
+    <!-- Company Logo -->
+    <div class="logo-container"><img src="images/auvsi-full.webp" alt="Company Logo" class="logo"></div>
+
+    <!-- Close button -->
+    <button id="close-btn" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">X</button>
+
+    <!-- Image Preview Container -->
+    <div id="preview-container" class="image-preview">
+        <p id="placeholder-text">No image selected</p>
+    </div>
+
+    <!-- Spinner (hidden by default) -->
+    <div id="spinner" class="spinner hidden"></div>
+
+    <!-- Success or Error Message Container -->
+    <div id="message-container" class="hidden"></div>
+
+    <!-- Image Select Button -->
+    <input type="file" id="file-input" hidden> <!-- Hidden file input -->
+    <button id="select-image-btn" class="styled-btn">Select Image</button>
+
+    <!-- Upload Button (Initially Disabled) -->
+    <button id="upload-btn" class="styled-btn disabled" disabled>Upload</button>
+</div>
+
+<script src="iframe-actions.js"></script>
+<script src="file-upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Ignore all the .idea folder
+.idea/
+.DS_Store
+
+# But keep some files
+!.idea/modules.xml
+!.idea/vcs.xml
+!.idea/.name
